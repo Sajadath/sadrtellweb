@@ -6,7 +6,7 @@ function AppLayout() {
   return (
     <div>
       <Header />
-      <main>
+      <main className="bg-stone-100">
         <Outlet />
       </main>
 
