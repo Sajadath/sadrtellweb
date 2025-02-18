@@ -1,5 +1,90 @@
+import logo from "../../logo/sadrtellfinal-removebg-preview-3.png";
 function Footer() {
-  return <footer className="bg-blue-600">this is a footer</footer>;
+  return (
+    <footer dir="rtl" className="border-t-2 border-blue-500">
+      <div className="m-auto mt-12 flex w-[70%] flex-col items-center justify-center gap-5 p-3 text-right md:flex-row">
+        <img className="w-60" src={logo} alt="sadrtell-logo" />
+        <p>
+          صدرتل با تمرکز بر فروش کالاهای دیجیتال به صورت تکی و عمده ، تلاش
+          می‌کند بهترین محصولات دیجیتال از جمله موبایل،ساعت‌های هوشمند و گجت‌های
+          روز دنیا را با بالاترین کیفیت و مناسب‌ترین قیمت به مشتریان ارائه دهد.
+          هدف ما ایجاد تجربه‌ای لذت‌بخش از خرید آنلاین همراه با ضمانت اصالت و
+          پشتیبانی حرفه‌ای است.
+        </p>
+      </div>
+
+      <ul className="mt-4 mb-8 flex flex-wrap items-center justify-center space-x-6">
+        <li>
+          <a
+            className="transition-all duration-200 hover:text-gray-400"
+            href="#"
+          >
+            تماس با ما
+          </a>
+        </li>
+        <li>
+          <a
+            className="transition-all duration-200 hover:text-gray-400"
+            href="#"
+          >
+            سوالات متداول
+          </a>
+        </li>
+        <li>
+          <a
+            className="transition-all duration-200 hover:text-gray-400"
+            href="#"
+          >
+            قوانین و مقررات
+          </a>
+        </li>
+        <li>
+          <a
+            className="transition-all duration-200 hover:text-gray-400"
+            href="#"
+          >
+            نمایندگی ها
+          </a>
+        </li>
+        <li>
+          <a
+            className="transition-all duration-200 hover:text-gray-400"
+            href="#"
+          >
+            درباره ما
+          </a>
+        </li>
+        <li>
+          <a
+            className="transition-all duration-200 hover:text-gray-400"
+            href="#"
+          >
+            پیگیری سفارش
+          </a>
+        </li>
+        <li>
+          <a
+            className="transition-all duration-200 hover:text-gray-400"
+            href="#"
+          >
+            منشور حقوق مشتریان
+          </a>
+        </li>
+        <li>
+          <a
+            className="transition-all duration-200 hover:text-gray-400"
+            href="#"
+          >
+            فعالسازی تلفن همراه
+          </a>
+        </li>
+      </ul>
+
+      <div className="m-auto w-[70%] border-t-1 border-gray-200 pt-4 pb-4 text-gray-600">
+        <p>تمامی حقوق برای شرکت پرتو تجارت صدر محفوظ است</p>
+      </div>
+    </footer>
+  );
 }
 
 export default Footer;
