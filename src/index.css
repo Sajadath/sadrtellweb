@@ -1,1 +1,15 @@
 @import "tailwindcss";
+@font-face {
+  font-family: "IranYekan";
+  src: url("./font/Yekan.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "IranYekan", sans-serif;
+}
+
+@theme {
+  --color-sadrtell: #253b7e;
+}

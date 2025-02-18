@@ -1,7 +1,7 @@
 import logo from "../../logo/sadrtellfinal-removebg-preview-3.png";
 function Footer() {
   return (
-    <footer dir="rtl" className="border-t-2 border-blue-500">
+    <footer dir="rtl">
       <div className="m-auto mt-12 flex w-[70%] flex-col items-center justify-center gap-5 p-3 text-right md:flex-row">
         <img className="w-60" src={logo} alt="sadrtell-logo" />
         <p>
@@ -81,7 +81,9 @@ function Footer() {
       </ul>
 
       <div className="m-auto w-[70%] border-t-1 border-gray-200 pt-4 pb-4 text-gray-600">
-        <p>تمامی حقوق برای شرکت پرتو تجارت صدر محفوظ است</p>
+        <p className="text-gray-400">
+          تمامی حقوق برای شرکت پرتو تجارت صدر محفوظ است
+        </p>
       </div>
     </footer>
   );
