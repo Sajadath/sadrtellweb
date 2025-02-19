@@ -1,3 +1,4 @@
+import ContactInfos from "../ui/contact-us/ContactInfos";
 import Faq from "../ui/contact-us/Faq";
 import Form from "../ui/contact-us/Form";
 import Infos from "../ui/contact-us/Infos";
@@ -10,9 +11,12 @@ function ContactUs() {
         <div className="w-[50%]">
           <Faq />
         </div>
-        <div className="w-[50%]">
+        <div className="mb-10 w-[50%]">
           <Form />
         </div>
+      </div>
+      <div className="m-auto w-[70%]">
+        <ContactInfos />
       </div>
     </div>
   );
