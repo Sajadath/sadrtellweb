@@ -1,21 +1,21 @@
 import { HiPhone, HiTruck } from "react-icons/hi2";
 function ContactUs() {
   return (
-    <div className="flex gap-2 text-xs">
-      <div className="text-xs">
+    <div className="flex gap-2 text-sm">
+      <div>
+        <HiTruck size="35px" />
+      </div>
+      <div className="text-sm">
         <p>ارسال به سراسر کشور</p>
         <p className="text-blue-500">ارسال فوری در تهران</p>
       </div>
       <div>
-        <HiTruck size="30px" />
+        <HiPhone size="28px" />
       </div>
       <div>
         <p>پشتیبانی تلفنی</p>
 
-        <p>۰۲۱−۵۸646</p>
-      </div>
-      <div>
-        <HiPhone size="25px" />
+        <p dir="ltr">۰۲۱-۵۸۶۴۶</p>
       </div>
     </div>
   );
