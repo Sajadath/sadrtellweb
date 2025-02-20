@@ -13,11 +13,11 @@ function Footer() {
         </p>
       </div>
 
-      <ul className="mt-4 mb-8 flex flex-wrap items-center justify-center space-x-6">
+      <ul className="mt-4 mb-8 flex flex-col flex-wrap items-center justify-center gap-5 sm:flex-row">
         <li>
           <a
             className="transition-all duration-200 hover:text-gray-400"
-            href="#"
+            href="/contact-us"
           >
             تماس با ما
           </a>
@@ -49,7 +49,7 @@ function Footer() {
         <li>
           <a
             className="transition-all duration-200 hover:text-gray-400"
-            href="#"
+            href="/about-us"
           >
             درباره ما
           </a>
@@ -65,7 +65,7 @@ function Footer() {
         <li>
           <a
             className="transition-all duration-200 hover:text-gray-400"
-            href="#"
+            href="/customer-rights"
           >
             منشور حقوق مشتریان
           </a>

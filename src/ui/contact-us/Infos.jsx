@@ -8,20 +8,22 @@ function Infos() {
       dir="rtl"
       className="bg-sadrtell m-auto w-[70%] space-x-5 p-10 text-center text-lg text-white"
     >
-      <div className="flex items-center justify-center gap-5">
+      <div className="flex flex-col items-center justify-center gap-5 text-sm lg:flex-row lg:text-base">
         <div className="flex items-center justify-center gap-2">
           <IoCallSharp />
-          <span>تلفن :‌ 88938967 - 021</span>
+          <span className="text-xs lg:text-base">تلفن :‌ 88938967 - 021</span>
         </div>
         <div className="flex items-center justify-center gap-2">
           <MdEmail />
-          <span>پست الکترونیک :‌ info@sadrtell.ir</span>
+          <span className="text-xs lg:text-base">
+            پست الکترونیک :‌ info@sadrtell.ir
+          </span>
         </div>
       </div>
 
-      <div className="flex items-center justify-center gap-2">
+      <div className="mt-5 flex items-center justify-center gap-2 lg:mt-0">
         <FaMagnifyingGlass />
-        <p>
+        <p className="text-xs lg:text-base">
           نشانی : تهران - خیابان قائم مقام فراهانی - بن بست ممتاز - پلاک ۳ -
           واحد ۱
         </p>

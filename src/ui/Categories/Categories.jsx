@@ -23,11 +23,11 @@ function Categories() {
       </h3>
       {showCategory && (
         <>
-          <div className="absolute top-[100%] h-fit w-full rounded-b-xl bg-neutral-100">
+          <div className="animate-fade-up absolute top-[100%] z-50 h-fit w-full rounded-b-xl bg-neutral-100">
             <ul>
               {categoryMenu.map((category, index) => (
                 <CategoryLabel category={category} key={index}>
-                  <HiChevronLeft color="" />
+                  <HiChevronLeft />
                 </CategoryLabel>
               ))}
             </ul>
