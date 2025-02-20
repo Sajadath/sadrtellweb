@@ -2,7 +2,7 @@ function CustomerRights() {
   return (
     <div className="space-y-4 py-8" dir="rtl">
       <h1 className="py-8 text-center text-6xl text-gray-400/80">
-        منشور حقوق مشتریان​
+        منشور حقوق مشتریان
       </h1>
       <p className="px-4 pb-4.5 text-center text-gray-500">
         با سپاس از شما در انتخاب گارانتی صدرتل، به عنوان آسودگی خاطر جهت استفاده
