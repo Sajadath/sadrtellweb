@@ -69,9 +69,9 @@ export default function PageNotFound() {
 
       <div className="w-full max-w-md space-y-8 text-center">
         {/* Decorative elements */}
-        <div className="pointer-events-none absolute inset-0 overflow-hidden">
-          <div className="absolute -top-1/2 -left-1/2 h-full w-full animate-[spin_20s_linear_infinite] rounded-full bg-[#253b7e]/[0.02]" />
-          <div className="absolute -right-1/2 -bottom-1/2 h-full w-full animate-[spin_25s_linear_infinite] rounded-full bg-[#253b7e]/[0.02]" />
+        <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
+          <div className="absolute -top-1/2 -left-1/2 z-0 h-full w-full animate-[spin_20s_linear_infinite] rounded-full bg-[#253b7e]/[0.02]" />
+          <div className="absolute -right-1/2 -bottom-1/2 z-0 h-full w-full animate-[spin_25s_linear_infinite] rounded-full bg-[#253b7e]/[0.02]" />
         </div>
 
         <div className="relative">
@@ -88,7 +88,7 @@ export default function PageNotFound() {
                   {number}
                 </span>
                 <div
-                  className={`animate-shadow absolute -bottom-8 left-1/2 h-2 w-8 -translate-x-1/2 rounded-full bg-[#253b7e]/10 blur-sm ${i === 1 ? "delay-100" : i === 2 ? "delay-200" : ""} `}
+                  className={`animate-shadow absolute -bottom-8 left-1/2 z-0 h-2 w-8 -translate-x-1/2 rounded-full bg-[#253b7e]/10 blur-sm ${i === 1 ? "delay-100" : i === 2 ? "delay-200" : ""} `}
                 />
               </div>
             ))}
@@ -116,7 +116,7 @@ export default function PageNotFound() {
               boxShadow: "0 10px 30px -10px rgba(37, 59, 126, 0.5)",
             }}
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-[#253b7e] via-white/10 to-[#253b7e] opacity-0 transition-opacity group-hover:opacity-100" />
+            <div className="absolute inset-0 z-0 bg-gradient-to-r from-[#253b7e] via-white/10 to-[#253b7e] opacity-0 transition-opacity group-hover:opacity-100" />
             <svg
               viewBox="0 0 24 24"
               className="relative h-4 w-4 stroke-2"
