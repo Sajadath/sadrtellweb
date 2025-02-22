@@ -68,7 +68,7 @@ function Particles() {
 
 export default function PageNotFound() {
   return (
-    <div className="relative flex min-h-[60dvh] w-full items-center justify-center overflow-hidden bg-gradient-to-b from-white to-blue-100/20 p-4">
+    <div className="relative z-0 flex min-h-[60dvh] w-full items-center justify-center overflow-hidden bg-gradient-to-b from-white to-blue-100/20 p-4">
       <Particles />
 
       <div className="w-full max-w-md space-y-8 text-center">

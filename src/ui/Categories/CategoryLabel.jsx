@@ -4,7 +4,6 @@ import CategoryChildren from "./CategoryChildren";
 function CategoryLabel({ category, children }) {
   const [showCategory, setShowCategory] = useState(false);
   const nestedChildren = category.children;
-  console.log(children);
   return (
     <li>
       <div
@@ -16,7 +15,7 @@ function CategoryLabel({ category, children }) {
         {children}
         {showCategory && (
           <>
-            <div className="absolute top-0 right-[100%] h-fit w-40 rounded-xl">
+            <div className="absolute top-0 right-[100%] h-fit w-40 rounded-xl bg-white">
               <ul>
                 {nestedChildren.map((child, index) => (
                   <CategoryChildren child={child} key={index} />
