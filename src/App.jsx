@@ -3,6 +3,8 @@ import AppLayout from "./ui/AppLayout";
 import AboutUs from "./pages/AboutUs";
 import Home from "./pages/Home";
 import ContactUs from "./pages/ContactUs";
+import PageNotFound from "./pages/PageNotFound";
+import CustomerRights from "./pages/CustomerRights";
 
 const router = createBrowserRouter([
   {
@@ -12,6 +14,15 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
+      {
+        path: "*",
+        element: <PageNotFound />,
+      },
+      {
+        path: "/customer-rights",
+        element: <CustomerRights />,
+      },
+
       {
         path: "/contact-us",
         element: <ContactUs />,

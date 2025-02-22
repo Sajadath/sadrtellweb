@@ -28,11 +28,12 @@ const QA = [
 
 function Faq() {
   return (
-    <div className="pt-4 pr-10">
-      <span className="text-stone-400">
-        درصورتی که سوال شما در سوالات زیر نیست لطفا فرم روبرو رو تکمیل کنید
+    <div className="pt-4 lg:pr-10">
+      <span className="hidden text-stone-400 lg:block">
+        درصورتی که سوال شما در سوالات زیر نیست لطفا فرم روبرو را تکمیل کنید
       </span>
-      <h2 className="mt-2 border-b-1 border-stone-300 pb-8 text-3xl">
+
+      <h2 className="mt-2 border-b-1 border-stone-300 pb-8 text-center text-3xl lg:text-right">
         سوالات متداول
       </h2>
 
@@ -41,6 +42,9 @@ function Faq() {
           <QnA key={index} questionAndAnswer={ce} />
         ))}
       </ul>
+      <span className="mt-4 block text-sm text-stone-400 lg:hidden">
+        درصورتی که سوال شما در سوالات زیر نیست لطفا فرم زیر را تکمیل کنید
+      </span>
     </div>
   );
 }

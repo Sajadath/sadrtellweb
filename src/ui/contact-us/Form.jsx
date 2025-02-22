@@ -12,11 +12,13 @@ function Form() {
   }
 
   return (
-    <div className="pr-7" dir="rtl">
-      <h2 className="mt-2 pb-8 text-3xl">تماس با ما</h2>
+    <div className="lg:pr-7" dir="rtl">
+      <h2 className="mt-2 pb-2 text-center text-3xl lg:pb-8 lg:text-right">
+        تماس با ما
+      </h2>
       <form>
-        <div className="mb-3 flex gap-4">
-          <div className="flex w-[45%] flex-col">
+        <div className="mb-3 flex flex-col gap-4 lg:flex-row">
+          <div className="flex flex-col lg:w-[45%]">
             <label className="mb-2 text-xl" htmlFor="name">
               نام{" "}
               <span className="text-base text-red-700 italic">(الزامی)</span>
@@ -28,7 +30,7 @@ function Form() {
               type="text"
             />
           </div>
-          <div className="flex w-[45%] flex-col">
+          <div className="flex flex-col lg:w-[45%]">
             <label className="mb-2 text-xl" htmlFor="familyName">
               نام خانوادگی{" "}
               <span className="text-base text-red-700 italic">(الزامی)</span>
@@ -41,8 +43,8 @@ function Form() {
             />
           </div>
         </div>
-        <div className="mb-3 flex gap-4">
-          <div className="flex w-[45%] flex-col">
+        <div className="mb-3 flex flex-col gap-4 lg:flex-row">
+          <div className="flex flex-col lg:w-[45%]">
             <label className="mb-2 text-xl" htmlFor="phone">
               شماره تماس
             </label>
@@ -52,7 +54,7 @@ function Form() {
               type="tel"
             />
           </div>
-          <div className="flex w-[45%] flex-col">
+          <div className="flex flex-col lg:w-[45%]">
             <label className="mb-2 text-xl" htmlFor="email">
               ایمیل{" "}
               <span className="text-base text-red-700 italic">(الزامی)</span>
@@ -83,12 +85,12 @@ function Form() {
             name="request"
             id="request"
           ></textarea>
-          <h4 className="my-3 text-stone-400">
+          <h4 className="mx-auto my-3 text-stone-400 lg:mx-0">
             {reqInput.length} از 600 حداکثر کاراکتر
           </h4>
         </div>
 
-        <button className="bg-sadrtell rounded-4xl px-9 py-2 text-white">
+        <button className="bg-sadrtell mx-auto block rounded-4xl px-9 py-2 text-white">
           ثبت
         </button>
       </form>
