@@ -13,7 +13,7 @@ function Categories() {
       onMouseEnter={() => setShowCategory(true)}
       onMouseLeave={() => setShowCategory(false)}
       onClick={() => setShowCategory(false)}
-      className="bg-sadrtell content px- relative mr-15 w-[15%] rounded-t-2xl border"
+      className="bg-sadrtell content relative z-50 mr-15 w-[15%] rounded-t-2xl border"
     >
       <h3 className="flex items-center justify-around py-5 text-center text-white">
         <HiOutlineBars3 /> دسته بندی کالاها
@@ -23,7 +23,7 @@ function Categories() {
       </h3>
       {showCategory && (
         <>
-          <div className="animate-fade-up absolute top-[100%] z-1 h-fit w-full rounded-b-xl bg-white">
+          <div className="animate-fade-up absolute top-[100%] z-50 h-fit w-full rounded-b-xl bg-white">
             <ul>
               {categoryMenu.map((category, index) => (
                 <CategoryLabel category={category} key={index}>
