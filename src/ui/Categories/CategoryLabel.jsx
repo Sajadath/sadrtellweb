@@ -9,7 +9,7 @@ function CategoryLabel({ category, children }) {
       <div
         onMouseEnter={() => setShowCategory(true)}
         onMouseLeave={() => setShowCategory(false)}
-        className="relative flex items-center justify-between py-2 pr-3 text-center hover:bg-neutral-300"
+        className="hover:bg-sadrtell relative flex items-center justify-between py-2 pr-3 text-center text-black hover:text-white"
       >
         <p>{category.label}</p>
         {children}

@@ -1,6 +1,6 @@
 function CategoryChildren({ child }) {
   return (
-    <div className="py-1.5 hover:bg-neutral-300">
+    <div className="hover:bg-sadrtell py-2 text-black hover:text-white">
       <li>
         <a className="block" href={child.link}>
           {child.label}

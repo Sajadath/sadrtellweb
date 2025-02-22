@@ -1,11 +1,17 @@
 import Categories from "../Categories/Categories";
+import AccountCenter from "./AccountCenter";
 import NavbarNavigation from "./NavbarNavigation";
 
 function NavBar() {
   return (
-    <div className="sticky top-0 z-50 flex bg-blue-200" dir="rtl">
+    <div
+      className="bg-navbar sticky top-0 z-50 flex h-[60px] items-center gap-9"
+      dir="rtl"
+    >
       <Categories />
       <NavbarNavigation />
+
+      <AccountCenter />
     </div>
   );
 }
