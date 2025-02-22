@@ -23,7 +23,7 @@ function Categories() {
       </h3>
       {showCategory && (
         <>
-          <div className="absolute top-[100%] h-fit w-full rounded-b-xl bg-neutral-100">
+          <div className="absolute top-[100%] h-fit w-full rounded-b-xl bg-white">
             <ul>
               {categoryMenu.map((category, index) => (
                 <CategoryLabel category={category} key={index}>
