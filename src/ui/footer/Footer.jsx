@@ -33,7 +33,7 @@ function Footer() {
         <li>
           <a
             className="transition-all duration-200 hover:text-gray-400"
-            href="#"
+            href="/قوانین-و-مقررات"
           >
             قوانین و مقررات
           </a>
