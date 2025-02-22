@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import ContactUs from "./pages/ContactUs";
 import PageNotFound from "./pages/PageNotFound";
 import CustomerRights from "./pages/CustomerRights";
+import QavaninVaMoqararat from "./pages/QavaninVaMoqararat";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "*",
         element: <PageNotFound />,
+      },
+      {
+        path: "/قوانین-و-مقررات",
+        element: <QavaninVaMoqararat />,
       },
       {
         path: "/customer-rights",
