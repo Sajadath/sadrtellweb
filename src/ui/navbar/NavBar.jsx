@@ -3,7 +3,7 @@ import NavbarNavigation from "./NavbarNavigation";
 
 function NavBar() {
   return (
-    <div className="sticky top-0 flex bg-blue-200" dir="rtl">
+    <div className="sticky top-0 z-50 flex bg-blue-200" dir="rtl">
       <Categories />
       <NavbarNavigation />
     </div>
