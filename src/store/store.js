@@ -1,7 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import shader from "../ui/shader/shaderSlice";
+import shadowReducer from "../ui/shader/shaderSlice";
+
 export const store = configureStore({
   reducer: {
-    shader: shader,
+    shadow: shadowReducer,
   },
 });

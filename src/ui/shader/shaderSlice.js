@@ -1,18 +1,19 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const shaderSlice = createSlice({
-  name: "shader",
+const shadowSlice = createSlice({
+  name: "shadow",
   initialState: {
-    blur: false,
+    menuHider: false,
   },
   reducers: {
-    blurryOn: (state) => {
-      state.blur = true;
+    menuHiderOn: (state) => {
+      state.menuHider = true;
     },
-    blurryOff: (state) => {
-      state.blur = false;
+    menuHiderOff: (state) => {
+      state.menuHider = false;
     },
   },
 });
-export const { blurryOn, blurryOff } = shaderSlice.actions;
-export default shaderSlice.reducer;
+
+export const { menuHiderOn, menuHiderOff } = shadowSlice.actions;
+export default shadowSlice.reducer;

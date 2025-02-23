@@ -3,8 +3,11 @@ import AfterSellServices from "./AfterSellServices";
 import { HiOutlineChevronDown } from "react-icons/hi2";
 import { HiChevronUp } from "react-icons/hi2";
 import GuaranteeCategory from "./GuaranteeCategory";
+import { useHideOrUnhide } from "../../hooks/useHideOrUnhide";
 
 function NavbarNavigation() {
+  const toggleHider = useHideOrUnhide();
+
   const [showCategory, setShowCategory] = useState(false);
   const [showGuaranteeCategory, setShowGuaranteeCategory] = useState(false);
   const [hoverMenu1, setHoverMenu1] = useState(false);
@@ -13,6 +16,7 @@ function NavbarNavigation() {
   const [hoverMenu4, setHoverMenu4] = useState(false);
   const [hoverMenu5, setHoverMenu5] = useState(false);
   const [hoverMenu6, setHoverMenu6] = useState(false);
+
   return (
     <div className="flex h-full gap-10 pr-5">
       <div
@@ -31,10 +35,12 @@ function NavbarNavigation() {
         onMouseEnter={() => {
           setShowCategory(true);
           setHoverMenu2(true);
+          toggleHider("hide");
         }}
         onMouseLeave={() => {
           setShowCategory(false);
           setHoverMenu2(false);
+          toggleHider("show");
         }}
         className="relative flex h-full items-center justify-center gap-2"
       >
@@ -52,10 +58,12 @@ function NavbarNavigation() {
         onMouseEnter={() => {
           setHoverMenu3(true);
           setShowGuaranteeCategory(true);
+          toggleHider("hide");
         }}
         onMouseLeave={() => {
           setHoverMenu3(false);
           setShowGuaranteeCategory(false);
+          toggleHider("show");
         }}
         className="relative flex items-center justify-center"
       >

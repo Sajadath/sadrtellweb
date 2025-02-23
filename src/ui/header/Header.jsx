@@ -2,11 +2,8 @@ import SearchInput from "./search input/SearchInput";
 import SadrtellIcon from "./SadrtellIcon";
 import ContactUs from "./contact us/ContactUs";
 import NavBar from "../navbar/NavBar";
-import { useSelector } from "react-redux";
-function Header() {
-  const blur = useSelector((state) => state.shader.blur);
-  console.log(blur);
 
+function Header() {
   return (
     <>
       <header dir="rtl">
