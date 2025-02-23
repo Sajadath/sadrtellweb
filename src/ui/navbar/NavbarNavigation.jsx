@@ -46,7 +46,9 @@ function NavbarNavigation() {
       >
         <h3>خدمات پس از فروش</h3>
         {!showCategory ? <HiOutlineChevronDown /> : <HiChevronUp />}
-        <div className="absolute top-[70%] h-15 w-full bg-transparent"></div>
+        {showCategory && (
+          <div className="absolute top-[70%] h-15 w-full bg-transparent"></div>
+        )}
 
         <div
           className={`bg-sadrtell absolute bottom-0 h-1 w-full transition-all duration-300 ${hoverMenu2 ? "scale-100" : "scale-0"}`}
@@ -65,13 +67,16 @@ function NavbarNavigation() {
           setShowGuaranteeCategory(false);
           toggleHider("show");
         }}
-        className="relative flex items-center justify-center"
+        className="relative flex items-center justify-center gap-2"
       >
         <h3>گارانتی صدرتل</h3>
+        {!showGuaranteeCategory ? <HiOutlineChevronDown /> : <HiChevronUp />}
         <div
           className={`bg-sadrtell absolute bottom-0 h-1 w-full transition-all duration-300 ${hoverMenu3 ? "scale-100" : "scale-0"}`}
         ></div>
-        <div className="absolute top-[70%] h-20 w-full bg-transparent"></div>
+        {showGuaranteeCategory && (
+          <div className="absolute top-[70%] h-20 w-full bg-transparent"></div>
+        )}
         {showGuaranteeCategory && (
           <div className="animate-fade-up absolute top-[100%] -right-2 w-fit rounded-2xl bg-white">
             <GuaranteeCategory />
@@ -107,7 +112,7 @@ function NavbarNavigation() {
         onMouseEnter={() => setHoverMenu6(true)}
         onMouseLeave={() => setHoverMenu6(false)}
       >
-        <a className="block" href="/contact-us">
+        <a className="block" href="#">
           پیگیری سفارش
         </a>
         <div

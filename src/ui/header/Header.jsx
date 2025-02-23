@@ -13,7 +13,6 @@ function Header() {
           <ContactUs />
         </div>
       </header>
-
       <NavBar />
     </>
   );
