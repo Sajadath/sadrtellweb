@@ -7,8 +7,8 @@ import watches from "./home imgs/categories/watches.jpg";
 
 function QuickCategories() {
   return (
-    <div dir="rtl">
-      <div className="quick-categories mx-auto my-10 flex min-h-45 w-[70%] items-center justify-center gap-10">
+    <div dir="rtl" className="min-h-50">
+      <div className="quick-categories mx-auto my-10 flex w-[70%] items-center justify-center gap-10">
         <div className="flex flex-col items-center">
           <a href="#">
             <img
