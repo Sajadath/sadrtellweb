@@ -1,7 +1,12 @@
+import Banners from "../ui/home/Banners";
+import QuickCategories from "../ui/home/QuickCategories";
+
 function Home() {
   return (
-    <div className="h-[1900px] text-center">
-      <p> this is home component !!</p>
+    <div className="text-center">
+      <Banners />
+
+      <QuickCategories />
     </div>
   );
 }

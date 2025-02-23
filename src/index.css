@@ -49,6 +49,7 @@ body {
 
     --radius: 0.5rem;
   }
+
   @keyframes opacityAppear {
     from {
       opacity: 0;
@@ -93,6 +94,22 @@ body {
 }
 
 @layer utilities {
+  /* shrink home menu */
+
+  .quick-categories .category-img {
+    width: 8.75rem; /* Matches w-35 */
+    transition: width 0.3s ease; /* Smooth transition */
+  }
+
+  .quick-categories .category-img:hover {
+    width: 10rem; /* Matches w-40 */
+  }
+
+  /* Shrink non-hovered images only when one image is hovered */
+  .quick-categories:has(.category-img:hover) .category-img:not(:hover) {
+    width: 7.5rem; /* Matches w-30 or your desired smaller size */
+  }
+
   .animate-fade-up {
     animation: fade-up 0.5s ease-out forwards var(--delay, 0ms);
   }
