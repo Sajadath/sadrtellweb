@@ -29,7 +29,7 @@ function NavBar() {
 
   return (
     <div
-      className={`bg-navbar sticky top-0 z-50 flex h-[60px] items-center justify-around transition-transform duration-500 ease-in-out ${
+      className={`bg-navbar sticky top-0 z-50 hidden h-[60px] items-center justify-around transition-transform duration-500 ease-in-out lg:flex ${
         isHidden ? "-translate-y-full" : "translate-y-0"
       }`}
       dir="rtl"

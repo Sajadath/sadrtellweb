@@ -1,7 +1,7 @@
 import { HiPhone, HiTruck } from "react-icons/hi2";
 function ContactUs() {
   return (
-    <div className="flex gap-2 text-sm">
+    <div className="hidden md:flex md:gap-2 md:text-sm">
       <div>
         <HiTruck size="35px" />
       </div>
