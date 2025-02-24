@@ -22,6 +22,7 @@ function Banners() {
       setActiveBanner(index + 1);
     }
   };
+
   return (
     <div className="relative w-full">
       <Swiper
@@ -34,35 +35,41 @@ function Banners() {
         grabCursor={true}
         mousewheel={false}
         autoplay={{
-          delay: 2000,
+          delay: 200000000,
           disableOnInteraction: false,
         }}
+        className="w-full" // Explicitly set height
       >
         <SwiperSlide>
-          <div className="relative">
+          <div className="relative w-full">
             <img
               src={banner1}
               alt="banner1"
-              className="relative h-[300px] w-full lg:h-[572px]"
+              className="h-[150px] w-full sm:h-[400px] sm:object-cover"
             />
-            <button className="hover:bg-sadrtell active:bg-sadrtell/50 absolute top-[20%] right-[8%] cursor-pointer rounded-4xl bg-white px-5 py-2 hover:text-white">
+
+            <button className="hover:bg-sadrtell active:bg-sadrtell/50 absolute top-[20%] right-[8%] cursor-pointer rounded-4xl bg-white px-2 py-1 text-xs hover:text-white">
               برای خرید اینجا کلیک کنید
             </button>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            src={banner2}
-            alt="banner2"
-            className="h-[300px] w-full lg:h-[572px]"
-          />
+          <div className="w-full">
+            <img
+              src={banner2}
+              alt="banner2"
+              className="h-[150px] w-full sm:h-[400px] sm:object-cover"
+            />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            src={banner3}
-            alt="banner3"
-            className="h-[300px] w-full lg:h-[572px]"
-          />
+          <div className="w-full">
+            <img
+              src={banner3}
+              alt="banner3"
+              className="h-[150px] w-full sm:h-[400px] sm:object-cover"
+            />
+          </div>
         </SwiperSlide>
       </Swiper>
       <div className="absolute bottom-2 left-[50%] z-50 flex translate-x-[-50%] items-center justify-around gap-2 rounded-3xl bg-white/30 px-6 py-3 backdrop-blur-2xl">
