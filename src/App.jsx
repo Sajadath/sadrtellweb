@@ -1,4 +1,4 @@
-import { createHashRouter, RouterProvider } from "react-router-dom"; // Use createHashRouter
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AppLayout from "./ui/AppLayout";
 import AboutUs from "./pages/AboutUs";
 import Home from "./pages/Home";
@@ -7,7 +7,7 @@ import PageNotFound from "./pages/PageNotFound";
 import CustomerRights from "./pages/CustomerRights";
 import QavaninVaMoqararat from "./pages/QavaninVaMoqararat";
 
-const router = createHashRouter(
+const router = createBrowserRouter(
   [
     {
       element: <AppLayout />,
@@ -39,7 +39,7 @@ const router = createHashRouter(
       ],
     },
   ],
-  { basename: "/sadrtellweb/" }, // Still needed for the base path
+  { basename: "/sadrtellweb/" }, // Ensure this matches your repo name exactly
 );
 
 function App() {
