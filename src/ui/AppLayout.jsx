@@ -28,7 +28,7 @@ function AppLayout() {
             <p>کوکی میقولی ؟ :)</p>
             <button
               onClick={() => setCookies(true)}
-              className="bg-sadrtell rounded-xl px-3 py-1 text-white"
+              className="bg-sadrtell hover:bg-sadrtell/90 cursor-pointer rounded-xl px-3 py-1 text-white"
             >
               ارههههه
             </button>
