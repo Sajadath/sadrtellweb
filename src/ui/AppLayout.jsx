@@ -25,12 +25,12 @@ function AppLayout() {
             dir="rtl"
             className="animate-fade-up fixed bottom-0 flex w-full items-center justify-center gap-4 border-t-1 border-t-gray-400 bg-white py-3 text-2xl"
           >
-            <p>کوکی میقولی ؟ :)</p>
+            <p>کوکی  </p>
             <button
               onClick={() => setCookies(true)}
               className="bg-sadrtell hover:bg-sadrtell/90 cursor-pointer rounded-xl px-3 py-1 text-white"
             >
-              ارههههه
+              باشه
             </button>
           </div>
         )}
